@@ -263,3 +263,125 @@ h2 { font-size: clamp(28px, 4vw, 48px); margin-bottom: 16px; }
 .footer { border-top: 1px solid var(--border); padding: 48px 0; text-align: center; color: var(--text-secondary); font-size: 0.875rem; background: var(--bg-primary); }
 .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 24px; }
 .footer-links a:hover { color: var(--accent-neon); }
+
+/* RESPONSIVE DESIGN MEDIA QUERIES */
+
+/* Tablet & Smaller Desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .container {
+        padding: 0 32px;
+    }
+}
+
+/* Mobile & Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .section {
+        padding: 70px 0;
+    }
+    .hero {
+        padding: 130px 0 70px;
+        min-height: auto;
+    }
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+    .hero .subheadline {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .hero .cta-group {
+        width: 100%;
+    }
+    .hero .cta-group .btn {
+        width: 100%;
+        padding: 16px 24px !important;
+        font-size: 1.1rem !important;
+    }
+    .offer-card {
+        padding: 32px;
+    }
+    .price-new {
+        font-size: 2.75rem;
+    }
+    .mentor-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px;
+        gap: 24px;
+    }
+    .guarantee {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px;
+        gap: 24px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .nav-btn {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+    .btn {
+        width: 100%;
+    }
+    .dor-card {
+        padding: 20px;
+        gap: 16px;
+    }
+    .mentor-box {
+        padding: 24px 16px;
+    }
+    .mentor-img {
+        width: 150px;
+        height: 150px;
+    }
+    .mentor-info h3 {
+        font-size: 1.5rem;
+    }
+    .guarantee {
+        padding: 32px 16px;
+        gap: 16px;
+    }
+    .guarantee-badge {
+        font-size: 3.5rem;
+    }
+    .guarantee-info h3 {
+        font-size: 1.5rem;
+    }
+    .offer-card {
+        padding: 32px 16px;
+    }
+    .price-new {
+        font-size: 2.25rem;
+    }
+    .price-new span {
+        font-size: 1rem;
+    }
+    .offer-card .btn {
+        padding: 16px !important;
+        font-size: 1.1rem !important;
+    }
+    .bonus-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+    }
+}
+
